@@ -4,12 +4,6 @@
 
 # COMMAND ----------
 
-spark.conf.set(
-    "fs.azure.account.key.datalake1351831800.dfs.core.windows.net",
-    "0JVmpSjw6r+5TEDf3zBSjiaxi1USe+nXPxu6MqOlgSLnSSPmC8L2WWOonuuMpMmnEJmRv1LueIpR+AStqWVQFQ==")
-
-# COMMAND ----------
-
 countries = spark.read.csv("abfss://bronze@datalake1351831800.dfs.core.windows.net/countries.csv", header = True)
 
 # COMMAND ----------
